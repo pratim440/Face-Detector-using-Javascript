@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Face Detector</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      canvas {
+        position: absolute;
+      }
+      /* @media (max-width: 768px) {
+        #video_container {
+          max-width: 95vw !important;
+          max-height: 95vh !important;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <video id="video" autoplay muted></video>
+
+    <script src="face-api.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
